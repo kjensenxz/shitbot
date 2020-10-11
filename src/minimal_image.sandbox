@@ -1,0 +1,14 @@
+-kernel
+/home/kbjensen/prog/sandbox/minimal_image/bzImage
+-initrd
+/home/kbjensen/prog/sandbox/minimal_image/initramfs.cpio.gz
+-watchdog
+i6300esb
+-watchdog-action
+poweroff
+-serial
+chardev:serio
+-append
+'console=ttyS0,115200 bin=/bin/sh'
+-cpu
+Haswell-v1
